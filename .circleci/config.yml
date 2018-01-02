@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - checkout
-      - echo $stg_id_rsa_pub
+      - run: echo $stg_id_rsa_pub
 
       # Download and cache dependencies
       #- restore_cache:
