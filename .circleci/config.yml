@@ -18,7 +18,10 @@ jobs:
 
     steps:
       - checkout
-      - run: echo $stg_id_rsa_pub
+      - run: echo $stg_id_rsa_pub  >> ~/.ssh/known_hosts
+      - run: cat  ~/.ssh/known_hosts
+
+
 
       # Download and cache dependencies
       #- restore_cache:
